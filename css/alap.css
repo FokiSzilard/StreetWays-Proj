@@ -1,0 +1,169 @@
+/* --- ALAPVETŐ BEÁLLÍTÁSOK --- */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --border-color: #e5e5e5;
+    --hover-color: #767676;
+    --spacer-color: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* --- FEJLÉC (MOBIL NÉZET) --- */
+.site-header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left, .header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.logo-image {
+    max-width: 80px; 
+    height: auto;
+    margin: 5px 0; 
+}
+
+.desktop-nav {
+    display: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: 0.3s;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.mobile-nav.is-open {
+    display: flex;
+}
+
+.mobile-nav-link {
+    padding: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-spacer {
+    height: 60px; 
+    background-color: var(--spacer-color);
+    color: var(--bg-color);
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5px
+}
+
+.spacer-kozepso{
+    border-left: 2px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+}
+
+
+/* --- ASZTALI NÉZET (Töréspont: 768px) --- */
+@media (min-width: 768px) {
+    .header-container {
+        padding: 1.5rem 2rem;
+    }
+
+    .hamburger-btn {
+        display: none; 
+    }
+
+    .desktop-nav {
+        display: flex; 
+    }
+
+    .mobile-nav {
+        display: none !important; 
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+}   
