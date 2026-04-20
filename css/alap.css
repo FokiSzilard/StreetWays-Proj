@@ -128,24 +128,25 @@ body {
 }
 
 .header-spacer {
-    height: 60px; 
+    height: 40px; 
+    font-size: x-small;
     background-color: var(--spacer-color);
     color: var(--bg-color);
-    display: flex;
-    gap: 25px;
-    flex-direction: row;
-    justify-content: space-between;
+    display:flex;
     text-align: center;
-    margin: 5px
 }
 
-.spacer-kozepso{
+.spacer{
+    flex: 1;
+}
+
+.kozepso{
     border-left: 2px solid var(--bg-color);
     border-right: 2px solid var(--bg-color);
 }
 
 
-/* --- ASZTALI NÉZET (Töréspont: 768px) --- */
+/* --- ASZTALI NÉZET (768px) --- */
 @media (min-width: 768px) {
     .header-container {
         padding: 1.5rem 2rem;
@@ -165,5 +166,8 @@ body {
 
     .logo {
         font-size: 1.8rem;
+    }
+    .header-spacer{
+        font-size: small;
     }
 }   

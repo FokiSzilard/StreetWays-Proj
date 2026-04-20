@@ -1,0 +1,70 @@
+/* --- ALAPVETŐ BEÁLLÍTÁSOK --- */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --htext-color: #ffffff;
+    --border-color: #e5e5e5;
+    --hover-color: #767676;
+    --spacer-color: #000000;
+}
+
+.MainVal{
+    height: 300px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px; 
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--htext-color);
+    font-family: sans-serif;
+}
+
+.Jobb-IMG {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.Bal-TXT {
+    margin-bottom: 10px;
+}
+
+.Bal-IMG {
+    display: none;
+    grid-template-columns: repeat(4, 1fr); ;
+    gap: 10px;
+    flex-grow: 1;
+
+}
+
+.Bal-IMG img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+.Jobb-IMG img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+/* --- ASZTALI NÉZET (768px) --- */
+@media (min-width: 768px) {
+    .MainVal{
+        height: 500px;
+    }
+    .Bal-IMG{
+        display: grid;
+        justify-items: center;
+    }
+    .Jobb-IMG{
+        max-height: 450px;
+    }
+    
+}   
