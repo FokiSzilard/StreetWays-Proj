@@ -8,43 +8,69 @@
     --spacer-color: #000000;
 }
 
+/* --- Legfelső sor --- */
+
 .MainVal{
     height: 300px;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #F2C1A5 0%, #A3B7D2 100%);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px; 
+    gap: 20px;  
     padding: 20px;
     box-sizing: border-box;
     color: var(--htext-color);
     font-family: sans-serif;
 }
 
-.Jobb-IMG {
-    display: flex;
+.MainVal h2{
+    font-size: 14px;
+}
+.MainVal p{
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.Val-Bal{display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 100%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .Bal-TXT {
     margin-bottom: 10px;
 }
 
+.MainValImages{
+    display: flex;
+    margin-top: 24px;   
+    gap: 10px;
+    position: relative;
+}
+
 .Bal-IMG {
     display: none;
-    grid-template-columns: repeat(4, 1fr); ;
+    grid-template-columns: repeat(3, 1fr); ;
     gap: 10px;
-    flex-grow: 1;
-
+    margin-top: auto;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .Bal-IMG img{
     width: 100%;
+    max-width: 120px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
     background-color: var(--bg-color);
+    display: block;
+}
+
+.Jobb-IMG {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;   
 }
 
 .Jobb-IMG img {
@@ -54,17 +80,25 @@
     border-radius: 8px; 
 }
 
+
 /* --- ASZTALI NÉZET (768px) --- */
 @media (min-width: 768px) {
     .MainVal{
         height: 500px;
+        padding: 20px 50px 20px 50px;
+    }
+    .MainVal h2{
+        font-size: 24px;
+    }
+    .MainVal p{
+        font-size: 36px;
     }
     .Bal-IMG{
-        display: grid;
+        display: flex;
         justify-items: center;
     }
     .Jobb-IMG{
         max-height: 450px;
     }
-    
+
 }   
