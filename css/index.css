@@ -30,7 +30,8 @@
     line-height: 1.2;
 }
 
-.Val-Bal{display: flex;
+.Val-Bal{
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
