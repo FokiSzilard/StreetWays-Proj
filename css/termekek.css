@@ -1,14 +1,26 @@
 .termeklap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin:5px;
-    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
 }
 
+.termeklap-bal{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
 
+.termeklap-jobb {
+    flex: 1;
+    text-align: left;
+    line-height: auto;
+}
 .termek-kep {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
     border: 1px solid #ddd;
 }
@@ -17,23 +29,65 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    float: left;
-    padding-left: 10px;
 }
 
 .termek-leiras {
     font-size: 16px;
     color: #666;
-    margin-bottom: 20px;
-    float: left;
-    padding-left: 10px;
+    margin-bottom: 20px;;
 }
 
 .termek-ar {
     font-size: 20px;
     font-weight: bold;
     color: #000;
-    margin-bottom: 20px;
-    float: left;
-    padding-left: 10px;
+}
+
+.termek-szin {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 25px;
+}
+
+.termek-eredetiar {
+    font-size: 10px;
+    color: #000;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.meret-valaszto{
+    margin-top: 5px; 
+    font-size: 18px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 400px; 
+    height: 50px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer ;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #333;
 }
