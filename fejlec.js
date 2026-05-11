@@ -28,8 +28,9 @@ function betoltTermekAdatokat() {
     document.querySelector(".termek-ar").textContent = termek.ar;
     document.querySelector(".termek-eredetiar").textContent = termek.eredetiar;
     document.querySelector(".termek-szin").textContent = termek.szin;
-    document.querySelector(".termek-kep").src = termek.kep;
-    
+    document.getElementById("kep1").src = termek.kep1;
+    document.getElementById("kep2").src = termek.kep2;
+    document.getElementById("kep3").src = termek.kep3;
 }
 
 document.addEventListener("DOMContentLoaded", betoltTermekAdatokat);
