@@ -26,7 +26,10 @@ function betoltTermekAdatokat() {
     document.querySelector(".termek-nev").textContent = termek.nev;
     document.querySelector(".termek-leiras").textContent = termek.leiras;
     document.querySelector(".termek-ar").textContent = termek.ar;
+    document.querySelector(".termek-eredetiar").textContent = termek.eredetiar;
+    document.querySelector(".termek-szin").textContent = termek.szin;
     document.querySelector(".termek-kep").src = termek.kep;
+    
 }
 
 document.addEventListener("DOMContentLoaded", betoltTermekAdatokat);
