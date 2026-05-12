@@ -94,18 +94,22 @@ label {
 @media (min-width: 768px) {
     .termeklap {
         display: grid;
-        grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-        align-items: start;
+        grid-template-columns: 1fr 350px;
         gap: 32px;
         padding: 24px;
+        align-items: start;
     }
 
-    .termeklap-bal{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .termeklap-bal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
 
-    .termek-kep-elso,
+    .termek-kep-elso{
+        aspect-ratio: 1 / 1;
+    }
+
     .termek-kep-masodik {
         aspect-ratio: 1 / 1;
     }
@@ -113,5 +117,9 @@ label {
     .termek-kep-harmadik {
         grid-column: 1 / -1;
         aspect-ratio: 16 / 9;
+        margin-top: 8px;
     }
+
+    
+
 }
