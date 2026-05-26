@@ -14,6 +14,7 @@ body {
     color: var(--text-color);
 }
 
+
 /* --- FEJLÉC (MOBIL NÉZET) --- */
 .site-header {
     background-color: var(--bg-color);
@@ -146,6 +147,79 @@ body {
 }
 
 
+/* --- footer ---*/
+.site-footer {
+    background-color: #222; 
+    color: #fff; 
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f4a261; 
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f4a261; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f4a261; 
+    transform: scale(1.1); 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444; 
+    padding-top: 10px;
+    font-size: 12px;
+    color: #aaa; 
+}
 /* --- ASZTALI NÉZET (768px) --- */
 @media (min-width: 768px) {
     .header-container {
