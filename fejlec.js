@@ -34,3 +34,5 @@ function betoltTermekAdatokat() {
 }
 
 document.addEventListener("DOMContentLoaded", betoltTermekAdatokat);
+
+
