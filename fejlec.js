@@ -9,16 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-
-
 function getParameterByName(name) {
     const url = new URL(window.location.href);
     return url.searchParams.get(name);
 }
-
-
-
 
 function betoltTermekAdatokat() {
     const termekId = getParameterByName("id");
